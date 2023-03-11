@@ -1,0 +1,19 @@
+import pandas as pd
+
+# txt_file = pd.read_fwf(r'all_lists.txt')
+
+# colnames = ['List ID', 'Name', 'Description', 'Owner ID', 'Created At', 'Follwer Count']
+
+# txt_file.to_csv(r'all_lists.csv', index = None)
+
+all_lists = pd.read_csv('all_lists.csv', sep="\t")
+
+# all_lists.to_csv(r'all_lists.csv')
+
+print(all_lists.head())
+
+#print(all_lists)
+
+#f = open('all_lists.txt', 'r')
+#print(f.read())
+#f.close()
